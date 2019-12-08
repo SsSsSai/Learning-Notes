@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script src=".\js\vue.js"></script>
+    <script src=".\js\demo.js" defer="defer"></script>
+</head>
+
+<body>
+    <div>
+        <h6>绑定内容</h6>
+        <div id="app">{{message}}</div>
+        <hr>
+    </div>
+
+    <div>
+        <h6>绑定属性v-bind或:</h6>
+        <span id="app_1" :title="message">鼠标放在上面显示信息</span>
+        <hr>
+    </div>
+
+    <div id="app_2">
+        <h6>v-if语句用法</h6>
+        <div v-if="boolfalse">now you see me</div>
+        <div v-if="booltrue">now you see me</div>
+        <hr>
+    </div>
+
+    <div id="app_3">
+        <h6>v-for语句用法</h6>
+        <ol>
+            <li v-for="people in persion">
+                {{people.name}}
+            </li>
+        </ol>
+        <ol>
+            <li v-for="name in people">
+                {{name}}
+            </li>
+        </ol>
+    </div>
+</body>
+
+
+</html>
